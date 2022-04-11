@@ -1,5 +1,10 @@
 ﻿// Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
 
+int[,,] array = RandomArray(4,4,4);
+Console.WriteLine();	
+PrintArray(array);
+
+
 int[,,] RandomArray (int row, int column,int z)
 {
     int[,,] array = new int[row,column,z];
@@ -35,6 +40,3 @@ void PrintArray(int[,,] array)
     }
 }
 
-int[,,] array = RandomArray(4,4,4);
-Console.WriteLine();	
-PrintArray(array);
